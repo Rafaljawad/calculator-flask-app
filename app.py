@@ -2,13 +2,13 @@ from flask import Flask , render_template ,request
 
 app = Flask(__name__) #__main___
 
+# @app.route("/")
+# def index():
+#   return "<h1><center>Hello World Flask....</center></h1>"
+
+
+
 @app.route("/")
-def index():
-  return "<h1><center>Hello World Flask....</center></h1>"
-
-
-
-@app.route("/home")
 def home():
   return render_template("home.html")
 
